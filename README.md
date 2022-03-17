@@ -14,7 +14,7 @@ This starter is build in the style of a company marketing site. The components o
 
 Styles are written in SCSS, scripts in Javasript and compiled with Metalsmith plugins. Content is written in [Markdown](https://marked.js.org/) and templates are coded with [Nunjucks](https://mozilla.github.io/nunjucks/). **All page content is defined in the frontmatter of each page**. Except for blog pages, there are no long-text markdown sections. Rather content text area fields in the page frontmatter are compiled into HTML with a Nunjucks filter. 
 
-Page sections are defined as a YAML object in the fronmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get a more [detailed explanation in this blogpost](https://glinka.co/blogs/).
+Page sections are defined as a YAML object in the fronmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get a more [detailed explanation in this blogpost](https://glinka.co/blog/).
 
 ## Quick start
 
