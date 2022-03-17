@@ -7,7 +7,8 @@
   Metalsmith company starter
 </h1>
 
-Bootstrap your company website with this Metalsmith starter. This starter includes Markdown content and Nunjucks templating.
+Bootstrap your company website with this Metalsmith starter. This starter includes Markdown content and Nunjucks templating. Check out a [demo of this starter](https://metalsmith-company-starter.netlify.app/).
+
 
 This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites.
 
