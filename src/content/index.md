@@ -21,7 +21,7 @@ sections:
     title: Metalsmith Company Starter
     header: "h1"
     subTitle: Using "sectioned" pages to build flexible page layouts
-    prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. The source code for this site can be found on GitHub.
+    prose: This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites. [The source code for this site can be found on GitHub](https://github.com/wernerglinka/metalsmith-company-starter).
     hasCtas: true
     ctas:
       - url: "https://github.com/wernerglinka/ms-components"
