@@ -1,0 +1,16 @@
+{% from "./responsive-image.njk" import responsiveImage %}
+
+{% macro video(videoData, siteMeta) %}
+  <div class="video"  >
+    <button class="js-modal-video" data-videoid={{ videoData.id}} data-videosrc={{ videoData.src }}>
+      <div class="play-button"></div>
+      {% set image = {
+        src: videoData.tn,
+        alt: "",
+        aspectRatio: videoData.aspectRatio
+      } %}
+      {{ responsiveImage(image, siteMeta) }}
+    </button>
+  </div>
+
+{% endmacro %}

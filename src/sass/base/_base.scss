@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+ul,
+ol {
+  margin: 0 0 0 40px;
+  padding: 0;
+}
+
+// class attached to body when overlay is open. prevents scrolling under overlay
+.modal-active, .menu-active {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &.blog-page {
+    max-width: 1024px;
+    padding-bottom: 50px;
+
+    @media (max-width: 1104px) {
+      padding: 0 40px 50px;
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.columns {
+  display: flex;
+  justify-content: flex-start;
+
+  .prose {
+    padding-right: 50px;
+
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+  }
+
+  &.reverse {
+    flex-direction: row-reverse;
+
+    .prose {
+      padding-right: 0;
+      padding-left: 50px;
+
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.caption {
+  font-size: 0.8em;
+  font-style: italic;
+  text-align: right;
+}

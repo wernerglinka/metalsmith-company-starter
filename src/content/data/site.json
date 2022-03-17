@@ -1,0 +1,19 @@
+{
+  "title": "Metalsmith Company Starter",
+  "description": "Metalsmith company starter with Nunjucks templating and page sections",
+  "author": "werner@glinka.co",
+  "siteURL": "https://metalsmith-company-starter.netlify.app/",
+  "siteOwner": "Werner Glinka",
+  "validate": {
+    "google": "",
+    "ms": ""
+  },
+  "social": {
+    "linkedIn": "",
+    "github": ""
+  },
+  "socialImage": "/assets/images/metalsmith/starter/social.png",
+  "imagePrefix": "https://res.cloudinary.com/glinkaco/image/upload/",
+  "imageDefault": "",
+  "audioPrefix": "https://res.cloudinary.com/glinkaco/video/upload/"
+}

@@ -1,0 +1,33 @@
+{% from "../partials/ctas.njk" import ctas %}
+{% from "../partials/responsive-image.njk" import responsiveImage %}
+{% from "../partials/text.njk" import text %}
+{% from "../partials/video.njk" import video %}
+
+{# this section receives props params and site #}
+
+<section class="section-banner {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+  <div class="content columns">
+    {% set info = params %}
+
+    <div class="prose">
+      {{ text(info)}}
+
+      {% if params.hasCtas %}
+        {{ ctas(info) }}
+      {% endif %}
+    </div>
+
+    <div class="media">
+      {% if params.mediaType === "Image"%}
+        {% set image = params.image %}
+        {# site is in scope, was passed via the component macro #}
+        {{ responsiveImage(image, site) }}
+      {% endif %}
+
+      {% if params.mediaType === "Video"%}
+        {% set videoData = params.video %}
+        {{ video(videoData, site) }}
+      {% endif %}
+    </div>
+  </div>
+</section>

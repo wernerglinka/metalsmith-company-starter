@@ -1,0 +1,11 @@
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<script>
+  // custom event for api loaded
+  const videoAPIReady = new Event("videoAPIReady");
+
+  function onYouTubeIframeAPIReady() {
+    "use strict";
+    window.dispatchEvent(videoAPIReady);
+  }
+</script>

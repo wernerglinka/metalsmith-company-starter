@@ -1,0 +1,19 @@
+.gitter-invite {
+  text-decoration: none;
+  margin-top: 50px;
+  display: block;
+
+  p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+  }
+  
+  img {
+    width: 40px;
+    display: inline-block;
+    margin: 0 10px;
+  }
+}

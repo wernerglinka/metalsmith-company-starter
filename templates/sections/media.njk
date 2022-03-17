@@ -1,0 +1,52 @@
+{% from "../partials/ctas.njk" import ctas %}
+{% from "../partials/responsive-image.njk" import responsiveImage %}
+{% from "../partials/text.njk" import text %}
+{% from "../partials/icon.njk" import icon %}
+{% from "../partials/video.njk" import video %}
+{% from "../partials/audio.njk" import audio %}
+
+{# this section receives props params and site #}
+
+<section class="section-media {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+  <div class="content columns {% if params.reverse %}reverse{% endif %}">
+    {% set info = params %}
+
+    <div class="prose">
+      {{ text(info)}}
+
+      {% if params.hasCtas %}
+        {{ ctas(info) }}
+      {% endif %}
+    </div>
+
+    <div class="media">
+      {% if params.mediaType === "Image"%}
+        {% set image = params.image %}
+        {# site is in scope, was passed via the component macro #}
+        {{ responsiveImage(image, site) }}
+      {% endif %}
+
+      {% if params.mediaType === "Icon"%}
+        {% set iconSource = params.icon %}
+        {{ icon(iconSource) }}
+      {% endif %}
+
+      {% if params.mediaType === "Lottie"%}
+        <div class="animation">
+          <lottie-player src="{{ params.lottieData.src}}" background="transparent"  speed="1" loop autoplay></lottie-player>
+        </div>
+      {% endif %}
+
+      {% if params.mediaType === "Video"%}
+        {% set videoData = params.video %}
+        {{ video(videoData, site) }}
+      {% endif %}
+
+      {% if params.mediaType === "Audio"%}
+        {% set audioData = params.audio %}
+        {{ audio(audioData, site) }}
+      {% endif %}
+
+    </div>
+  </div>
+</section>

@@ -1,0 +1,14 @@
+{% macro responsiveImage(image, siteMeta) %}
+  <div class="responsive-wrapper js-progressive-image-wrapper" style="padding-bottom:{{ image.aspectRatio}}%;" >
+
+    {# assemble the image url #}
+    {% set source = siteMeta.imagePrefix ~ image.src %}
+
+    {# get image source for LRIP #}
+    {% set lowResImagesrc = siteMeta.imagePrefix ~ "w_100,c_fill,g_auto,f_auto/" ~ image.src %}
+
+    <img class="low-res" src="{{ lowResImagesrc }}" alt="{{ image.alt }}"/>
+    <img class="high-res" src="" alt="{{ image.alt }}" data-prefix="{{ siteMeta.imagePrefix }}" data-source="{{ image.src }}"/>
+  </div>
+  <p class="caption">{{ image.caption }}</p>
+{% endmacro %}

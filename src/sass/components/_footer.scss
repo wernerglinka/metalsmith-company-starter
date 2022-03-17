@@ -1,0 +1,15 @@
+footer {
+  margin-top: auto;
+  min-height: 200px;
+  color: #fff;
+  background-color: #444;
+  padding: 20px;
+
+  * {
+    color: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,30 @@
+{% from "../partials/icon.njk" import icon %}
+
+<div class="header-wrapper js-header">
+  <header>
+    <div class="container">
+      <div class="brand">
+        {% set iconSource = "ms-bug" %}
+        <a class="js-home-link" href="/">{{ icon(iconSource) }}</a>
+      </div>
+
+      <div id="main-menu" class="js-main-menu">
+        <ul>
+          {% for menuItem in nav.menu %}
+            <li>
+              <div>
+                {% if menuItem.url === "/" %}
+                  {% set path = "home" %}
+                {% else %}
+                  {% set path = menuItem.url %}
+                {% endif %}
+                <a href={{ menuItem.url}} class="{{ path | trimSlashes }}">{{ menuItem.label }}</a>
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+    </div>
+  </header>
+</div>

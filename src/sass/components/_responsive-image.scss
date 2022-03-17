@@ -1,0 +1,42 @@
+.responsive-wrapper {
+  position: relative;
+  width: 100%;
+  height: 0;
+  // padding-bottom will be set during render based on image
+  overflow: hidden;
+
+  img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .low-res {
+    filter: blur(10px);
+    transition: opacity 0.4s ease-in-out;
+    width: 100%;
+    height: auto;
+  }
+
+  .high-res {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+  }
+
+  // the hi-res image may have a sligly different height. That may be due to the low-res
+  // image size being restricked to fewer steps when generating the image. To avoid the
+  // low-res showing under the high-res image, the low-res will be faded out as the high
+  // res is faded in
+  &.done {
+    .high-res {
+      opacity: 1;
+    }
+    .low-res {
+      opacity: 0;
+    }
+  }
+}

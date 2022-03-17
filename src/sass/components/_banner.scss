@@ -1,0 +1,34 @@
+/**
+ * Page section Banner
+ */
+
+.section-banner {
+  padding-top: 0;
+  padding-bottom: 0;
+
+  &.paddingTop {
+    padding-top: 40px;
+  }
+
+  &.paddingBottom {
+    padding-bottom: 40px;
+  }
+
+  .content {
+    padding: 50px 0;
+
+    @media (max-width: 767px) {
+      flex-direction: column-reverse;
+      @media (max-width: 767px) {
+        padding: 0;
+      }
+    }
+
+    > div {
+      flex: 0 0 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

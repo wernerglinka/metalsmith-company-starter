@@ -1,0 +1,13 @@
+{% from "../partials/text.njk" import text %}
+{% from "../partials/ctas.njk" import ctas %}
+
+<section class="section-intro {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
+  <div class="content">
+    {% set info = params %}
+    {{ text(info) }}
+
+    {% if info.hasCtas %}
+        {{ ctas(info) }}
+      {% endif %}
+  </div>
+</section>

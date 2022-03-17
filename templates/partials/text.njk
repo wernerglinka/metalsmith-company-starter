@@ -1,0 +1,21 @@
+{% macro text(info) %}
+
+  {% if info.title %}
+    {% if info.header === "h1" %}
+      <h1>{{ info.title }}</h1>
+    {% elif info.header === "h2" %}
+      <h2>{{ info.title }}</h2>
+    {% else %}
+      <h3>{{ info.title }}</h3>
+    {% endif %}
+  {% endif %}
+
+  {% if info.subTitle %}
+    <p class="sub-title">{{ info.subTitle }}</p>
+  {% endif %}
+
+  {% if info.prose %}
+    <div>{{ info.prose | mdToHTML | safe }}</div>
+  {% endif %}
+
+{% endmacro %}
