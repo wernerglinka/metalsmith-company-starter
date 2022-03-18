@@ -180,4 +180,28 @@ sections:
       ogg: ""
       mpeg: ""
 
+  - component: intro
+    disabled: false
+    inContainer: true
+    marginTop: false
+    marginBottom: true
+    paddingTop: false
+    paddingBottom: true
+    backgroundColor: ""
+    targetId: ""
+    title: ""
+    prose: |-
+      <a class="gitter-invite" href="https://gitter.im/metalsmith/community">
+        <p>Join the Metalsmith community at <img src="/assets/images/gitter.png" alt="gitter" /> to discuss all-things Metalsmith.</p>
+      </a>
+
+    header: "h2"
+    subTitle: ""
+    hasCtas: false
+    ctas:
+      - url: ""
+        label: ""
+        isExternal: false
+        isButton: true
+        buttonStyle: "primary"
 ---
