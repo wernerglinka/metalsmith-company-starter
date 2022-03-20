@@ -10,7 +10,7 @@ const sass = require("@metalsmith/sass");
 const postcss = require("@metalsmith/postcss");
 const when = require("metalsmith-if");
 const htmlMinifier = require("metalsmith-html-minifier");
-const add = require("metalsmith-add");
+const assets = require("metalsmith-static-files");
 const metadata = require("metalsmith-metadata");
 const prism = require("metalsmith-prism");
 
@@ -96,7 +96,7 @@ Metalsmith(__dirname)
   )
 
   .use(
-    add({
+    assets({
       source: "src/assets/",
       destination: "assets/",
     })
