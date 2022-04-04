@@ -69,7 +69,7 @@ sections:
     prose: |-
       Styles are written in SCSS, scripts in Javasript and compiled with Metalsmith plugins. Content is written in [Markdown](https://marked.js.org/) and templates are coded with [Nunjucks](https://mozilla.github.io/nunjucks/). **All page content is defined in the frontmatter of each page**. Except for blog pages, there are no long-text markdown sections. Rather content text area fields in the page frontmatter are compiled into HTML with a Nunjucks filter. 
 
-      Page sections are defined as a YAML object in the fronmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get more [detailed explanations in this blogpost](https://glinka.co/blog).
+      Page sections are defined as a YAML object in the frontmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get more [detailed explanations in this blogpost](https://glinka.co/blog).
 
       For example, this page is build with a header and footer that are the same for every page. Then it uses three components, a Banner, a text section and a media component twice for the body content.
 
