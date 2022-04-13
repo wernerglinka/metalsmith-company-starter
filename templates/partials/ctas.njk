@@ -1,6 +1,6 @@
 {% macro ctas(info) %}
   <div class="ctas">
-    {% for cta in info.ctas %}
+    {% for cta in info %}
 
       {# special case: a CTA may be used to trigger video modal #}
       {% if cta.isVideoTrigger %}

@@ -4,10 +4,10 @@
 <section class="section-intro {% if params.paddingTop %}paddingTop{% endif %} {% if params.paddingBottom %}paddingBottom{% endif %}">
   <div class="content">
     {% set info = params %}
-    {{ text(info) }}
+    {{ text(info.text) }}
 
     {% if info.hasCtas %}
-        {{ ctas(info) }}
+        {{ ctas(info.ctas) }}
       {% endif %}
   </div>
 </section>

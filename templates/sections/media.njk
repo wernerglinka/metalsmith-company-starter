@@ -12,10 +12,10 @@
     {% set info = params %}
 
     <div class="prose">
-      {{ text(info)}}
+      {{ text(info.text)}}
 
       {% if params.hasCtas %}
-        {{ ctas(info) }}
+        {{ ctas(info.ctas) }}
       {% endif %}
     </div>
 
