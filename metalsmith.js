@@ -15,7 +15,7 @@ const metadata = require("metalsmith-metadata");
 const prism = require("metalsmith-prism");
 
 const marked = require("marked");
-const esbuild = require("./local_plugins/metalsmith-esbuild");
+const esbuild = require("@metalsmith/js-bundle");
 
 const { dependencies } = require("./package.json");
 const isProduction = process.env.NODE_ENV === "production";
@@ -114,9 +114,8 @@ Metalsmith(__dirname)
   .use(
     esbuild({
       entries: {
-        index: "src/js/main.js",
+        "assets/scripts": "src/js/main.js",
       },
-      outdir: "assets",
     })
   )
 

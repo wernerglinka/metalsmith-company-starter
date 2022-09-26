@@ -1,6 +1,5 @@
 ---
 layout: blog.njk
-bodyClasses: "blog"
 
 seo:
   title: My Blog

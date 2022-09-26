@@ -1,3 +1,5 @@
+/* global window, document, IntersectionObserver, ResizeObserver */
+
 import debounce from "../utilities/debounce";
 
 const loadResponsiveImage = (function loadResponsiveImage() {

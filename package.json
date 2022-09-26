@@ -33,9 +33,12 @@
     "prettier": "^1.19.1"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@barba/css": "^2.1.15",
     "@metalsmith/collections": "^1.2.2",
     "@metalsmith/drafts": "^1.2.0",
     "@metalsmith/in-place": "^4.5.0",
+    "@metalsmith/js-bundle": "^0.1.1",
     "@metalsmith/layouts": "^2.6.0",
     "@metalsmith/markdown": "^1.6.0",
     "@metalsmith/metadata": "^0.1.0",

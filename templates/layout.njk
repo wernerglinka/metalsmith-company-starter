@@ -9,10 +9,12 @@
   <div id="at-top"></div>
   {% include "sections/header.njk" %}
 
-  <main>
+  <main data-barba="wrapper">
+    <div data-barba="container" data-barba-namespace="barbaPage">
     {% block body %}
       This is the default contents
     {% endblock %}
+    </div>
   </main>
 
   {% include "sections/footer.njk" %}

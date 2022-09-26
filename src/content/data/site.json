@@ -13,7 +13,7 @@
     "github": ""
   },
   "socialImage": "/assets/images/metalsmith/starter/social.png",
-  "imagePrefix": "https://res.cloudinary.com/glinkaco/image/upload/",
+  "imagePrefix": "https://res.cloudinary.com/djd0plux8/image/upload/",
   "imageDefault": "",
-  "audioPrefix": "https://res.cloudinary.com/glinkaco/video/upload/"
+  "audioPrefix": "https://res.cloudinary.com/djd0plux8/image/upload/"
 }

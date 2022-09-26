@@ -25,9 +25,9 @@
 }
 
 /* active nav links */
-.home .home,
-.other-page .other-page,
-.blog .blog {
+[pagename="home"] .home,
+[pagename="other-page"] .other-page,
+[pagename="blog"] .blog {
   color: #ccc;
   pointer-events: none;
   cursor: default;

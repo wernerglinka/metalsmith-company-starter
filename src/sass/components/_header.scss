@@ -56,7 +56,7 @@
 }
 
 /* home link on home page */
-.home .brand a {
+[pagename="home"] .brand a {
   pointer-events: none;
   cursor: default;
 }

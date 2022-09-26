@@ -1,6 +1,5 @@
 ---
 layout: sections.njk
-bodyClasses: "home"
 
 seo:
   title: Metalsmith Company Starter
@@ -40,10 +39,10 @@ sections:
       aspectRatio: ""
       caption:
     image:
-      src: "v1647546742/tgc2022/corporate_ip4qbt.jpg"
+      src: "v1664225756/company-starter/pexels-anamul-rezwan-1145434_w33asu.jpg"
       alt: "Metalsmith Javascript"
-      aspectRatio: "56.25"
-      caption: "Photo by Josh Hild from Pexels"
+      aspectRatio: "66.67"
+      caption: "Photo by Anamul Rezwan from Pexels"
     lottieData:
       src: ""
       control:
@@ -119,9 +118,10 @@ sections:
       tn: ""
       aspectRatio: ""
     image:
-      src: "v1589394777/Industrial/test1_gfou1m_o5oebv.jpg"
-      alt: "nunjucks"
-      aspectRatio: "56.25"
+      src: "v1664225762/company-starter/pexels-andre-furtado-1263986_xqymoo.jpg"
+      alt: "Metalsmith Javascript"
+      aspectRatio: "66.67"
+      caption: "Photo by Andre Furtado from Pexels"
     lottieData:
       src: ""
       control:
@@ -168,9 +168,9 @@ sections:
       tn: ""
       aspectRatio: ""
     image:
-      src: "v1639779216/gatsby4mdx/cloudinary-logo_njlkd9.jpg"
+      src: "v1664226094/company-starter/cloudinary_byqcmi.png"
       alt: "cloudinary"
-      aspectRatio: "56.25"
+      aspectRatio: "64.36"
     lottieData:
       src: ""
       control:
