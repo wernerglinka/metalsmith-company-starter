@@ -12,9 +12,13 @@ Bootstrap your company website with this Metalsmith starter. This starter includ
 
 This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites.
 
+The website behaves like a Single Page Application (SPA) with the help of [Barba.js](https://barba.js.org/).
+
 Styles are written in SCSS, scripts in Javasript and compiled with Metalsmith plugins. Content is written in [Markdown](https://marked.js.org/) and templates are coded with [Nunjucks](https://mozilla.github.io/nunjucks/). **All page content is defined in the frontmatter of each page**. Except for blog pages, there are no long-text markdown sections. Rather content text area fields in the page frontmatter are compiled into HTML with a Nunjucks filter. 
 
-Page sections are defined as a YAML object in the fronmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get a more [detailed explanation in this blogpost](https://glinka.co/blog/).
+Page sections are defined as a YAML object in the frontmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get a more [detailed explanation in this blogpost](https://glinka.co/blog/).
+
+
 
 ## Quick start
 
