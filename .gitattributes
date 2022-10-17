@@ -5,3 +5,4 @@
 # For binary file types, prevent converting CRLF chars
 *.jpg		-text
 *.png   -text
+*.svg   -text

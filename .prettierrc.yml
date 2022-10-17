@@ -1,6 +1,8 @@
+semicolon: true
 trailingComma: none
+useTabs: false
 tabWidth: 2
 singleQuote: true
 bracketSpacing: true
-arrowParens: always
+arrowParens: avoid
 printWidth: 120
