@@ -12,7 +12,6 @@ import drafts from '@metalsmith/drafts';
 import permalinks from '@metalsmith/permalinks';
 import sass from '@metalsmith/sass';
 import postcss from '@metalsmith/postcss';
-import when from 'metalsmith-if';
 import htmlMinifier from 'metalsmith-html-minifier';
 import assets from 'metalsmith-static-files';
 import metadata from '@metalsmith/metadata';
@@ -64,6 +63,10 @@ const templateConfig = {
   }
 };
 
+function noop() { };
+// to use a plugin conditionally, use this pattern:
+// .use( isProduction ? htmlMinifier() : noop ) )
+
 let devServer = null;
 let t1 = performance.now();
 
@@ -74,13 +77,12 @@ function msBuild() {
       .watch( isProduction ? false : [ 'src', 'layouts' ] )
       .source( './src/content' )
       .destination( './build' )
-      .clean( true )
       .metadata( {
         msVersion: dependencies.metalsmith,
         nodeVersion: process.version
       } )
 
-      .use( when( isProduction, drafts() ) )
+      .use( isProduction ? noop : drafts() )
 
       .use(
         metadata( {
@@ -137,7 +139,7 @@ function msBuild() {
         } )
       )
 
-      .use( when( isProduction, htmlMinifier() ) )
+      .use( isProduction ? htmlMinifier() : noop )
   );
 }
 
