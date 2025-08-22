@@ -7,18 +7,17 @@
   Metalsmith company starter
 </h1>
 
-Bootstrap your company website with this Metalsmith starter. This starter includes Markdown content and Nunjucks templating. Check out a [demo of this starter](https://metalsmith-company-starter.netlify.app/).
+> **This starter is deprecated. Use the [Metalsmith2025 Structured Content Starter](https://github.com/wernerglinka/metalsmith2025-structured-content-starter) instead!**
 
+Bootstrap your company website with this Metalsmith starter. This starter includes Markdown content and Nunjucks templating.
 
 This starter is build in the style of a company marketing site. The components on this site are bare-bone interpretations of common information presentation patterns that can be found on many corporate websites.
 
 The website behaves like a Single Page Application (SPA) with the help of [Barba.js](https://barba.js.org/).
 
-Styles are written in SCSS, scripts in Javasript and compiled with Metalsmith plugins. Content is written in [Markdown](https://marked.js.org/) and templates are coded with [Nunjucks](https://mozilla.github.io/nunjucks/). **All page content is defined in the frontmatter of each page**. Except for blog pages, there are no long-text markdown sections. Rather content text area fields in the page frontmatter are compiled into HTML with a Nunjucks filter. 
+Styles are written in SCSS, scripts in Javasript and compiled with Metalsmith plugins. Content is written in [Markdown](https://marked.js.org/) and templates are coded with [Nunjucks](https://mozilla.github.io/nunjucks/). **All page content is defined in the frontmatter of each page**. Except for blog pages, there are no long-text markdown sections. Rather content text area fields in the page frontmatter are compiled into HTML with a Nunjucks filter.
 
 Page sections are defined as a YAML object in the frontmatter. This approach lends itself to an easy integration with headless CMSs like forestry.io. Get a more [detailed explanation in this blogpost](https://glinka.co/blog/).
-
-
 
 ## Quick start
 
@@ -27,7 +26,7 @@ Page sections are defined as a YAML object in the frontmatter. This approach len
     Clone the starter repository to create a new site.
 
     ```shell
-    git clone https://github.com/wernerglinka/metalsmith-company-starter.git new-site 
+    git clone https://github.com/wernerglinka/metalsmith-company-starter.git new-site
     ```
 
 1.  **Start developing.**
@@ -90,7 +89,7 @@ A quick look at the top-level files and directories you'll see in this Metalsmit
 
 ## Learn more about Metalsmith
 
-Looking for more guidance? Full documentation for Metalsmith can be found [on the website](https://www.metalsmith.io). 
+Looking for more guidance? Full documentation for Metalsmith can be found [on the website](https://www.metalsmith.io).
 
 ## Deploy
 
